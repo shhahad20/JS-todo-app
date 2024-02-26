@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <!-- Style file -->
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>Todo Pro</title>
+</head>
+<body>
+   <header>
+    <nav>
+        <div class="left">
+            <a href="#" id="logo">Task Pro</a>
+        </div>
+        <div class="right">
+        <a href="#">How to start</a>
+        <a href="#">About us</a>
+        <a href="#" class="cta">Sign In / Sign Up</a>
+    </div>
+    </nav>
+   </header> 
+   <section id="Hero">
+    <div id="hero-container">
+        <img src="/assets/assets-02.svg" alt="">
+        <div id="text-button">
+            <h1>Get Things Done, <br>
+                Get More Out of Life</h1>
+            <button>Let's Start</button>
+        </div>
+    </div>
+   </section>
+   <section id="Feature">
+        <div id="feature-container">
+            <img src="assets/assets-05.svg" alt="">
+            <div id="text-content">
+            <h2>Your <span style="font-style: italic;">Team</span>, Your <span style="font-style: italic;">Tasks</span>, One <span style="font-style: italic;">App</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Nulla Suspendisse eget fringilla dolor. Sed tristique
+                vehicula mi, eu tristique nulla viverra eget. Nullam ut
+                nisl arcu. Nulla facilisi. </p>
+                <div id="video-container">
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/iDbdXTMnOmE"
+                      frameborder="0"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+            </div>
+
+        </div>
+   </section>
+   <section id="Cards">
+    <!-- <div class="cards-button">
+        <button>Add new List</button>
+    </div> -->
+    <form action="">
+        <label >Filter:</label>
+        <label ><input type="radio" name="task-filter" id="all-tasks" checked> All</label>
+        <label ><input type="radio" name="task-filter" id="completed-tasks" > Completed</label>
+        <label ><input type="radio" name="task-filter" id="active-tasks" > Active</label>
+        <button id="filter-btn">Filter</button>
+    </form>
+    <div>
+        <input type="text" id="searchInput" placeholder="Search tasks">
+    </div>
+        <div class="card card1">
+            <h3>JS Todo assignment Requirements</h3>
+            <h4 style="color: rgb(202, 36, 36);">*Note: this list is not editable</h4>
+            <ol>
+                <li>Adding a todo</li>
+                <li>Rendering Todo List</li>
+                <li>Completing a todo</li>
+                <li>Deleting a todo</li>
+                <li>Editing a todo</li>
+                <li>Todo Counter</li>
+                <li>Filtering todo list</li>
+                <li>Persistent Storage</li>
+                <li>Search Functionality</li>
+                <li>Peer Review</li>
+            </ol>
+        </div>
+        <div class="card card2">
+            <h3>To do</h3>
+            <div id="todo-box">
+                <ul id="task-list">
+
+                </ul>
+            </div>
+            <p id="todo-counter">Total Tasks: 0</p>
+        </div>
+        <div class="card card3">
+            <h3>Workout plan</h3>
+            <h4 style="color: rgb(202, 36, 36);">*Note: this list is not editable</h4>
+            <ol>
+                <li>Walking 30min</li>
+                <li>Do 10 Push up</li>
+                <li>Have a healthy meal</li>
+                <li>Rest</li>
+            </ol>
+        </div>
+        <div class="cards-button">
+            <form action="" id="todo-form">
+            <input type="text" id="todoInput" placeholder="New task">
+            <button type="submit" id="add__task">Add new Task</button>
+        </form>
+        </div>
+   </section>
+<!-- <section id="extra-section">
+    <div class="extra-container">
+        <img src="assets/assets-07.svg" alt="">
+    </div>
+</section> -->
+   <footer>
+    <ul>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+        <a href="#">Join us</a>
+        <a href="#">How to start</a>
+    </ul>
+   </footer>
+   <script src="index.js"></script>
+</body>
+</html>
